@@ -1,8 +1,8 @@
 FROM debian:jessie
 
-MAINTAINER Dylan Wang "wanghaoyu@frazil.me"
+MAINTAINER orvice "docker@orx.me"
 
-ENV NGINX_VERSION 1.9.6
+ENV NGINX_VERSION 1.11.13
 
 RUN apt-get update && apt-get install -y ca-certificates build-essential wget libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev
 
