@@ -6,9 +6,9 @@ ENV NGINX_VERSION 1.11.13
 
 RUN apt-get update && apt-get install -y ca-certificates build-essential wget libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev
 
-RUN wget http://www.openssl.org/source/openssl-1.0.2d.tar.gz \
-  && tar -xvzf openssl-1.0.2d.tar.gz \
-  && cd openssl-1.0.2d \
+RUN wget http://www.openssl.org/source/openssl-1.1.0e.tar.gz \
+  && tar -xvzf   openssl-1.1.0e.tar.gz \
+  && cd  openssl-1.1.0e \
   && ./config \
     --prefix=/usr \
     --openssldir=/usr/ssl \
